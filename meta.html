@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <head>
-    t=<title>About me </title>
+    <title>Maxwell's Bio </title>
 </head>
 <body>
-<div>
+<div class="Wrap">
     <div class="navbar">
       <div class="navbar-left">
-        <!-- <img src="../../assets/myicon.png" style="height: 40px" /> -->
+        X
       </div>
       <div class="navbar-middle">
-        <div class="nav-tab">Home</div>
-        <div class="nav-tab">About</div>
-        <div class="nav-tab">Contact</div>
-        <div class="nav-tab">Projects</div>
+        <div class="nav-tab"
+            onclick="scrollToVH(0)">
+            Home
+          </div>
+        <div class="nav-tab"
+          onclick="scrollToVH(100)">
+          About
+        </div>
+        <div class="nav-tab"
+          onclick="scrollToVH(0)">
+          Contact
+        </div>
+        <div class="nav-tab">Resume</div>
+        <div class="nav-tab"
+          onclick="scrollToVH(200)">
+          Projects
+        </div>
       </div>
       <div class="navbar-right">
-        <span>x</span>
+        <div class="nav-tab-right"
+          onclick="window.location.href=' https://www.facebook.com/share/1GbsyiB1xr/?mibextid=LQQJ4d'">
+          <img src="https://th.bing.com/th/id/OIP.4uvbG6JSpnNCiFPLsKG8IgHaHa?w=217&h=217&c=7&r=0&o=5&pid=1.7" 
+          style="height: 30px; cursor: pointer;"/>
+        </div>
+        <div class="nav-tab-right"
+        onclick="window.location.href='https://www.instagram.com/maximuskiing '">
+          <img src="https://th.bing.com/th/id/OIP.SvQsh4WL9lpg9mMqrzZqLwHaHa?w=207&h=207&c=7&r=0&o=5&pid=1.7"
+          style="height: 30px; cursor: pointer;"/>
+        </div >
+        <div class="nav-tab-right"
+        onclick="window.location.href='https://github.com/Mlungisi22/ '">
+          <img src="https://th.bing.com/th/id/OIP.o834znnZFHjJGsFYLtxAAAHaHa?w=171&h=180&c=7&r=0&o=5&pid=1.7"
+          style="height: 30px; cursor: pointer;"/>
+        </div>
       </div>
     </div>
-    <div class="body" style="height: 80vh;
+
+
+    <div class="body" style="height: 100vh;
         width: 100vw;
         align-items: center;
         justify-content: center;">
@@ -29,7 +58,7 @@
            <div
             style="display: flex;
             flex-direction: row;
-            height: 80vh;
+            height: 100vh;
             justify-content: center;
             align-items: center;      
             ">
@@ -40,14 +69,39 @@
             </span>
             <span
                 style="display: flex;
-                    flex-direction: column;">
+                    flex-direction: column;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: 300;">
                 <span>Hello</span>
                 <span>My name is Mlungisi</span>
                 <span> Maxwell Mbuyisa</span>
-                <span>Im a Fullstack Software Engineer/Data Analyst</span>
+                <span>I'm a Fullstack Software Engineer/Data Analyst</span>
             </span>
            </div>
-            <div style="    
+
+           <div class="About">
+            <div class="about-header">
+                <span>About</span>
+            </div>
+            <div class="About-body">
+                <p>
+            Welcome to my personal website! I'm Mlungisi Maxwell Mbuyisa, I have dedicated my career to learning and developing new skills to become a better software developer, having recently finished my Compuer Science and Information Systems at the University of the Witwatersrand.</p>
+    
+            <p>I believe in the power of [Your Core Belief or Value], and I strive to incorporate this into everything I do. Whether it's [A Specific Activity or Project You Are Known For], or [Another Key Aspect of Your Work], my goal is to make a positive impact and inspire others along the way.</p>
+    
+            <p>When I'm not working, you can find me [Your Hobbies or Interests], exploring new places, or spending time with my loved ones. I'm always eager to connect with like-minded individuals, so feel free to reach out!</p>
+    
+            Thank you for visiting my site. I look forward to sharing my journey with you.
+    
+            </div>
+    
+            <div class="Contact">
+    
+    
+            </div>
+        </div>
+
+            <div style="  height: 100vh;  
                 width: 100vw;
                 align-items: center;
                 display: flex;
@@ -77,6 +131,7 @@
                         border: solid 2px black;
                         padding: 10px;
                         width: 300px;
+                        height: 300px;
                         cursor: pointer;
                         align-items: center;
                         display: flex;flex-direction: column;
@@ -85,7 +140,7 @@
                         onclick="window.location.href='https://github.com/Mlungisi22/Handy-Mike-Application'"
                         >
                              <div>Handy Mike Application</div>
-                            <img  style="height: 30vh;"
+                            <img  style="height: 20vh;"
                             src="https://www.shutterstock.com/shutterstock/photos/2345851523/display_1500/stock-vector--vector-different-handyman-logo-and-design-2345851523.jpg"
                             
                             />
@@ -96,6 +151,7 @@
                         border: solid 2px black;
                         padding: 10px;
                         width: 300px;
+                        height: 300px;
                         cursor: pointer;
                         align-items: center;
                         display: flex;flex-direction: column;
@@ -114,6 +170,7 @@
                         border: solid 2px black;
                         padding: 10px;
                         width: 300px;
+                        height: 300px;
                         cursor: pointer;
                         align-items: center;
                         display: flex;flex-direction: column;
@@ -122,7 +179,7 @@
                         onclick="window.location.href='https://github.com/Mlungisi22/Wits-Academy-by-codec'"
                         >
                              <div>Wits Academy Application</div>
-                            <img   style="height: 30vh;"
+                            <img 
                             src="https://th.bing.com/th?id=OIP.HFwkOIl9NChKU4VURlQXIgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
                            />
                     </div>
@@ -130,11 +187,50 @@
             
                 </div>
             </div>
-    
+            
         </div>
 
 
     <style scoped>
+        .About{
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          background-image: url('../About-me/Assets/Icons/white\ \ background.jpg');
+
+          .about-header{
+            display: flex;
+            background-color: black;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .About-body{
+            
+          justify-content: center;
+          align-items: center;
+            margin: 10px;
+            font-size: 35px;
+            font-family: 'Arial, Helvetica, sans-serif';
+            font-weight: 200;color: aliceblue;
+            background-color: black;
+            border-radius: 15px;
+            padding: 10px;
+            width: 95%;
+          }
+        }
+
+        .projects{
+          background-image: url('../About-me/Assets/Icons/white\ \ background.jpg');
+        }
+
+        .Wrap{
+          background-image: url('../About-me/Assets/Icons/white\ \ background.jpg');
+        }
+
         .navbar {
           display: flex;
           flex-direction: row;
@@ -165,26 +261,40 @@
         }
         
         .navbar-right {
-          width: 15vw;
+          width: 10vw;
           display: flex;
           align-items: center;
+          flex-direction: row;
+          justify-content: space-between;
         }
         
         .navbar-middle {
           height: 40px;
           display: flex;
           align-items: center;
+         
+        }
+
+        .nav-tab-right{
+          display: flex;
+          flex-direction: row; 
+          justify-content: space-between;
+          
         }
         </style>
+
 </div>
   
 
 </body>
-  <script setup lan="ts">
-        //   import { useRouter } from 'vue-router'
-        //   const router = useRouter()
-        //   const showprojects = () => {
-        //     router.push('/about')
-        //   }
+  <script>
+      function scrollToVH(vh) {
+        // Calculate the position in pixels based on the viewport height
+        const position = (vh / 100) * window.innerHeight;
+        window.scrollTo({
+            top: position,
+            behavior: 'smooth' // This makes the scroll smooth
+        });
+      }
   </script>
   
