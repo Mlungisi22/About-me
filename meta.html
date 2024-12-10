@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Maxwell's Bio </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 <div class="Wrap">
@@ -14,15 +15,15 @@
             Home
           </div>
         <div class="nav-tab"
-          onclick="scrollToVH(100)">
+          onclick="scrollToVH(108)">
           About
         </div>
         <div class="nav-tab"
-            onclick="scrollToVH(200)">
+            onclick="scrollToVH(210)">
             Contact
           </div>
         <div class="nav-tab"
-          onclick="scrollToVH(200)">
+          onclick="scrollToVH(208)">
           Projects
         </div>
       </div>
@@ -66,12 +67,12 @@
                 height: 50vh;">
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/026/707/530/original/back-end-development-bw-outline-2d-animation-developer-coding-software-programmer-4k-motion-graphic-coder-typing-on-laptop-monochrome-linear-animated-cartoon-flat-concept-white-background-video.jpg"/>
             </span>
-            <span class="main-details" >
+            <div class="main-details" >
                 <span>Hello</span>
                 <span>My name is Maxwell Mbuyisa</span>
                 <span>I'm a Fullstack Software Engineer/Data Analyst</span>
-                <div><button class="resume-button"> Resume</button></div>
-            </span>
+                <span ><button class="resume-button" onclick="window.location.href='https://maxwellmbuyisa.tiiny.site'"> Resume</button></span>
+            </div>
            </div>
 
            <div class="About">
@@ -80,11 +81,11 @@
             </div>
             <div class="About-body">
                 <p>
-            Welcome to my personal website! I'm Mlungisi Maxwell Mbuyisa, I have dedicated my career to learning and developing new skills to become a better software developer, having recently finished my Compuer Science and Information Systems at the University of the Witwatersrand.</p>
+            Welcome to my personal website! I'm Mlungisi Maxwell Mbuyisa,a small boy from a small town called Dannhauser.I have dedicated my career to learning and developing new skills to become a better software developer, having recently finished my Computer Science and Information Systems Degree at the University of the Witwatersrand and aslo AWS Cloud Practioner Certified.</p>
     
-            <p>I believe in the power of [Your Core Belief or Value], and I strive to incorporate this into everything I do. Whether it's [A Specific Activity or Project You Are Known For], or [Another Key Aspect of Your Work], my goal is to make a positive impact and inspire others along the way.</p>
+            <p>I believe in the power of learning and constantly developing ourselves , and I strive to incorporate this into everything I do. Whether it's learning a skill to make chores easier at home, or a skill to build a business to generate an income, my goal is to make a positive impact and inspire others along the way thtas why I working on my company called Precious Tech we plan to specialise on Digital Transformation on Software development with further dreams of going into the cloud .</p>
     
-            <p>When I'm not working, you can find me [Your Hobbies or Interests], exploring new places, or spending time with my loved ones. I'm always eager to connect with like-minded individuals, so feel free to reach out!</p>
+            <p>When I'm not working, you can find me playing soccer, pool, chess, exploring new places, or spending time with my loved ones. I'm always eager to connect with like-minded individuals, so feel free to reach out!</p>
     
             Thank you for visiting my site. I look forward to sharing my journey with you.
     
@@ -96,7 +97,7 @@
             </div>
         </div>
 
-            <div style="  height: 100vh;  
+            <div style="  
                 width: 100vw;
                 align-items: center;
                 display: flex;
@@ -148,15 +149,92 @@
                           Wits Academy Application
                         </div>
                     </div>
-
-            
+                    
                 </div>
+                
+            </div>
+
+            <div class="Contact-box">
+              <div class="contact-header">
+                <span>Get in touch</span>
+              </div>
+              <div class="contact-body">
+                <div class="Address">
+                    <div class="contact-icon">
+                       <i class="bi bi-envelope-arrow-down"></i>
+                       <b> Email</b>
+                    </div>
+                    <div class="contact-list">
+                        <span><b>MaxwellMbuyisa@outlook.com</b></span>
+                        <span>mmmbuyisa084077@gmail.com</span>
+                    </div>
+                </div>
+                <div class="Address">
+                    <div class="contact-icon"> 
+                      <i class="bi bi-telephone-inbound"></i>
+                      <b>Phone</b>
+                    </div>
+                    <div class="contact-list">
+                        <span><b>+27 79 787 6583</b></span>
+                    </div>
+                </div>
+                <div class="Address">
+                    <div class="contact-icon"> 
+                      <i class="bi bi-house-check-fill"></i>
+                      <b>Address</b>
+                    </div>
+                    <div class="contact-list">
+                        <span><b>Braamfontein Johannesburg</b></span>
+                        <span> Smit Street </span>
+                    </div>
+                </div>
+              </div>
+
             </div>
             
         </div>
 
 
     <style scoped>
+      .Contact-box{
+        width:100vw;
+        height: fit-content;
+        background-color: black;
+        color: aliceblue;
+        font-family: fantasy;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-header{
+        margin: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .contact-body{
+        width:90%;
+        display: flex;
+        font-size: large;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .contact-list{
+        display: grid;
+      }
+      .Address{
+        padding: 20px;
+         margin: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        }
+
         .project-img{
           border-radius: 5px;
           border-color: black;
@@ -197,6 +275,7 @@
           flex-direction: column;
           height: 100vh;
           background-image: url('../About-me/Assets/Icons/white\ \ background.jpg');
+          overflow: hidden;
 
           .about-header{
             display: flex;
@@ -211,8 +290,9 @@
           .About-body{
             justify-content: center;
             align-items: center;
+            overflow: hidden;
             margin: 10px;
-            font-size: 35px;
+            font-size: 33px;
             font-family: 'Arial, Helvetica, sans-serif';
             font-weight: 200;color: aliceblue;
             background-color: black;
@@ -242,6 +322,12 @@
           display: flex;
           flex-direction: column;
           font-weight: 400;
+
+          span{
+            font-family: fantasy;
+            font-weight: 600;
+          }
+
         }
         .resume-button{
           width:150px;
@@ -314,7 +400,6 @@
           display: flex;
           flex-direction: row; 
           justify-content: space-between;
-          
         }
         </style>
 
