@@ -59,20 +59,24 @@
             style="display: flex;
             flex-direction: row;
             height: 100vh;
+            width: 99vw;
             justify-content: center;
             align-items: center;      
             ">
             <span
+                class="main-picture-icon"
                 style="display: flex;
+                width: 	40vw;
                 height: 50vh;">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/026/707/530/original/back-end-development-bw-outline-2d-animation-developer-coding-software-programmer-4k-motion-graphic-coder-typing-on-laptop-monochrome-linear-animated-cartoon-flat-concept-white-background-video.jpg"/>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/026/707/530/original/back-end-development-bw-outline-2d-animation-developer-coding-software-programmer-4k-motion-graphic-coder-typing-on-laptop-monochrome-linear-animated-cartoon-flat-concept-white-background-video.jpg"
+                style="overflow: hidden;"/>
             </span>
-            <div class="main-details" >
+            <span class="main-details" >
                 <span>Hello</span>
                 <span>My name is Maxwell Mbuyisa</span>
                 <span>I'm a Fullstack Software Engineer/Data Analyst</span>
                 <span ><button class="resume-button" onclick="window.location.href='https://maxwellmbuyisa.tiiny.site'"> Resume</button></span>
-            </div>
+            </span>
            </div>
 
            <div class="About">
@@ -208,211 +212,213 @@
       }
   </script>
 
-<style scoped>
-.Contact-box{
-  width:100vw;
-  height: fit-content;
-  background-color: black;
-  color: aliceblue;
-  font-family: fantasy;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-header{
-  margin: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.contact-body{
-  width:90%;
-  display: flex;
-  font-size: large;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contact-list{
-  display: grid;
-}
-.Address{
-  padding: 20px;
-    margin: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  }
-
-  .project-img{
-    border-radius: 5px;
-    border-color: black;
-    border: solid 2px black;
-    padding: 10px;
-    width: 28%;
-    height: 300px;
-    cursor: pointer;
+<style>
+    .Contact-box{
+    width:100vw;
+    height: fit-content;
+    background-color: black;
+    color: aliceblue;
+    font-family: fantasy;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    width: 25vw;
+    }
 
-    .img-place{
-      height: 70%;
-      display: flex;
+    .contact-header{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    }
+
+    .contact-body{
+    width:90%;
+    display: flex;
+    font-size: large;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .contact-list{
+    display: grid;
+    }
+    .Address{
+    padding: 20px;
+      margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    }
+
+    .project-img{
+      border-radius: 5px;
+      border-color: black;
+      border: solid 2px black;
       padding: 10px;
-      justify-content: center;
+      width: 28%;
+      height: 300px;
+      cursor: pointer;
       align-items: center;
-      margin: 5px;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .project-description{
-      font-size: xx-large;
-      font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-      font-weight: 600;
-
-    }
-  } 
-
-
-  .About{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-image: url('../About-me/Assets/Icons/white\ \ background.jpg');
-    overflow: hidden;
-
-    .about-header{
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      width: 25vw;
+
+      .img-place{
+        height: 70%;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .project-description{
+        font-size: xx-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+
+      }
+    } 
+
+
+    .About{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-image: url('../About-me/Assets/Icons/white\ \ background.jpg');
+      overflow: hidden;
+
+      .about-header{
+        display: flex;
+        background-color: black;
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .About-body{
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin: 10px;
+        font-size: 33px;
+        font-family: 'Arial, Helvetica, sans-serif';
+        font-weight: 200;color: aliceblue;
+        background-color: black;
+        border-radius: 15px;
+        padding: 10px;
+        width: 95%;
+      }
+    }
+
+    .projects-list{
+      background-image: url('../About-me/Assets/Icons/white\ \ background.jpg');
+      display: flex;
+      padding: 20px;
+      flex:1;
+      width:90%;
+      flex-direction: row;
+      margin: 0px 20px 0px 20px;
+      justify-content: space-between;
+    }
+
+    .Wrap{
+      background-image: url('../About-me/Assets/Icons/white\ \ background.jpg');
+    }
+    .main-details{
+      margin-left:20px;
+      font-family: 'fantasy';
+      display: flex;
+      width: 48vw;
+      overflow: hidden;
+      flex-direction: column;
+      font-weight: 400;
+
+      span{
+        font-family: fantasy;
+        font-weight: 600;
+      }
+
+    }
+    .resume-button{
+      width:150px;
+      height:40px;
+      font-family: fantasy;
       background-color: black;
       color: aliceblue;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 400;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .About-body{
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      margin: 10px;
-      font-size: 33px;
-      font-family: 'Arial, Helvetica, sans-serif';
-      font-weight: 200;color: aliceblue;
-      background-color: black;
-      border-radius: 15px;
+      font-size: large;
+      border-radius: 10px;
+      margin: 20px;
       padding: 10px;
-      width: 95%;
+      display: flex;
+      justify-content: center;align-items: center;
     }
-  }
 
-  .projects-list{
-    background-image: url('../About-me/Assets/Icons/white\ \ background.jpg');
-    display: flex;
-    padding: 20px;
-    flex:1;
-    width:90%;
-    flex-direction: row;
-    margin: 0px 20px 0px 20px;
-    justify-content: space-between;
-  }
+    .resume-button :hover{
+      background-color: aliceblue;
+      color: black;
+      cursor: pointer;
+    }
 
-  .Wrap{
-    background-image: url('../About-me/Assets/Icons/white\ \ background.jpg');
-  }
-  .main-details{
-    margin-left:20px;
-    font-family: 'fantasy';
-    display: flex;
-    flex-direction: column;
-    font-weight: 400;
-
-    span{
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      color: aliceblue;
       font-family: fantasy;
-      font-weight: 600;
+      font-size: large;
+      height: 60px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-tab {
+      background-color: black;
+      color: aliceblue;
+      width: 150px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
     }
 
-  }
-  .resume-button{
-    width:150px;
-    height:40px;
-    font-family: fantasy;
-    background-color: black;
-    color: aliceblue;
-    font-size: large;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;align-items: center;
-  }
+    .navbar-middle :hover{
+      background-color: aliceblue;
+      color: black;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
-  .resume-button :hover{
-    background-color: aliceblue;
-    color: black;
-    cursor: pointer;
-  }
+    .navbar-left {
+      width: 15vw;
+    }
 
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: aliceblue;
-    font-family: fantasy;
-    font-size: large;
-    height: 60px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .nav-tab {
-    background-color: black;
-    color: aliceblue;
-    width: 150px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-  }
-  
-  .navbar-middle :hover{
-    background-color: aliceblue;
-    color: black;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .navbar-left {
-    width: 15vw;
-  }
-  
-  .navbar-right {
-    width: 10vw;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .navbar-middle {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    
-  }
+    .navbar-right {
+      width: 10vw;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-  .nav-tab-right{
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-  }
-  </style>
+    .navbar-middle {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      
+    }
+
+    .nav-tab-right{
+      display: flex;
+      flex-direction: row; 
+      justify-content: space-between;
+    }
+</style>
   
